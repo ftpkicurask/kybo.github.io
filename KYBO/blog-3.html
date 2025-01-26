@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR kódy v nebezpečí: Ako rozoznať quishing a chrániť svoje dáta</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Preskočiť na hlavný obsah</a>
+
+  <button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+  </button>  
+
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+  </button>
+
+  <nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+        </button>
+      </li>
+      <li class="home-li"><a href="index.html">Domov</a></li>
+      <li><a href="kapitoly.html">Kapitoly</a></li>
+      <li><a href="programy.html">Odporúčané programy</a></li>
+      <li><a href="quiz.html">Testovanie Vedomostí</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+  <div class="kapitoly">
+    <div class="kapitoly-text">
+    <h1>QR kódy v nebezpečí: Ako rozoznať quishing a chrániť svoje dáta</h1>
+    <br>
+    <p>QR kódy sa stali bežnou súčasťou nášho každodenného života, no vedeli ste, že môžu byť zneužité aj na podvody? Technika, ktorá sa nazýva <b>quishing</b>, využíva QR kódy na získanie osobných a citlivých údajov od obetí. Tento nový spôsob kybernetických útokov môže byť pre mnohých nečakaný a nebezpečný. Ako teda môžeme chrániť svoje dáta pred touto hrozbou?</p>
+    <br>
+    <div class="img-kapitoly">
+        <img src="TEST.png" class="img-kapitoly" alt=""/>
+    </div>
+    <p>(Zdroj: <a style="color: var(--text-color);" href="https://kybez.cz/quishing-jak-podvodnici-ziskavaji-data-pres-qr-kody/" target="_blank">https://kybez.cz/quishing-jak-podvodnici-ziskavaji-data-pres-qr-kody/</a>)</p>
+    <br>
+    <h2>Čo je to quishing?</h2>
+    <p><b>Quishing</b> je podvodná technika, pri ktorej podvodníci používajú QR kódy na získanie citlivých údajov od obetí. Tieto kódy môžu viesť na falošné webové stránky, kde sa od používateľov žiada, aby zadali osobné informácie, ako sú heslá, čísla kreditných kariet alebo iné dôverné údaje. Takéto útoky môžu byť veľmi nebezpečné, pretože QR kódy sa často používajú v situáciách, kde je používateľ menej ostražitý.</p>
+    <br>
+    <h2>Aké sú riziká quishingu?</h2>
+    <p>Riziká spojené s quishingom sú vysoké. Podvodníci môžu vytvoriť falošné QR kódy, ktoré vedú na stránky s phishingovými formulármi alebo nebezpečnými malvérovými súbormi. Medzi hlavné riziká patrí:</p>
+    <ul>
+        <li><b>Phishing</b>: Falošné webové stránky, ktoré vyzerajú ako legitímne, môžu zbierať vaše prihlasovacie údaje a ďalšie osobné informácie.</li>
+        <li><b>Malvér</b>: QR kódy môžu odkazovať na škodlivý softvér, ktorý sa stiahne do vášho zariadenia, čo môže spôsobiť vážne bezpečnostné problémy.</li>
+        <li><b>Finančné straty</b>: Ak podvodníci získajú prístup k bankovým účtom alebo platobným údajom, môžu spôsobiť finančné straty.</li>
+    </ul>
+    <br>
+    <h2>Ako sa chrániť pred quishingom?</h2>
+    <p>Existuje niekoľko spôsobov, ako sa chrániť pred quishingovými útokmi:</p>
+    <ul>
+        <li><b>Overte URL adresu</b>: Pred zadaním osobných údajov si vždy overte, či webová stránka, na ktorú vás QR kód vedie, je legitímna a či jej URL začína „https“.</li>
+        <li><b>Používajte overené aplikácie</b>: Na skenovanie QR kódov používajte dôveryhodné aplikácie, ktoré poskytujú upozornenia, ak kód vedie na podozrivú stránku.</li>
+        <li><b>Buďte ostražití</b>: Nikdy nezadávajte osobné alebo finančné údaje na stránkach, ktoré sú pre vás neznáme, a pred zadaním citlivých informácií sa uistite, že stránka je dôveryhodná.</li>
+    </ul>
+    <br>
+    <h2>Quishing v budúcnosti: Aké hrozby nás čakajú?</h2>
+    <p>Aj keď quishing je relatívne nová forma podvodu, jeho popularita medzi kyberzločincami bude pravdepodobne rásť. S pokračujúcim rozvojom technológie QR kódov a s väčším využívaním týchto kódov v rôznych oblastiach života je dôležité neustále vzdelávať verejnosť o rizikách a opatreniach na ochranu. V budúcnosti môžeme očakávať ešte sofistikovanejšie techniky zneužívania QR kódov na podvody, preto je nevyhnutné byť neustále ostražitý.</p>         
+    </div>
+  </div>
+
+  <footer>Tvorca: Filip Kičura</footer>
+  
+</body>
+</html>
